@@ -1,0 +1,17 @@
+.carousel__prev.carousel__prev--disabled,
+.carousel__next.carousel__next--disabled {
+  cursor: initial;
+  width: 0;
+}
+
+.carousel__prev.carousel__prev--disabled + .carousel__next {
+  @media (width > 768px) {
+    width: 100%;
+  }
+}
+
+:has(.carousel__next--disabled) .carousel__prev:not(.carousel__prev--disabled) {
+  @media (width > 768px) {
+    width: 100%;
+  }
+}
