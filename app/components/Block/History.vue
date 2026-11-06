@@ -13,7 +13,7 @@ const { history } = defineProps<{ history: History }>();
     <div class="horizontal-scroll__viewport">
       <div class="horizontal-scroll__track">
         <article
-          class="panel relative items-center justify-center px-2.5 md:flex md:px-5"
+          class="panel relative md:items-center md:justify-center px-2.5 md:flex md:px-5"
         >
           <p
             class="py-12 text-center text-xs font-bold tracking-widest uppercase md:absolute md:top-15 md:left-5 md:w-25 md:py-0 md:text-left"
@@ -32,8 +32,8 @@ const { history } = defineProps<{ history: History }>();
           </div>
         </article>
 
-        <article class="panel px-2.5 md:px-5">
-          <div class="md:flex md:gap-35">
+        <article class="panel md:flex md:justify-center md:items-center px-2.5 md:px-5">
+          <div class="md:flex md:gap-35 md:relative md:max-h-220 md:h-full">
             <div class="mt-18 flex gap-2.5 md:mt-0">
               <div class="flex-1">
                 <Image
@@ -65,8 +65,8 @@ const { history } = defineProps<{ history: History }>();
           </div>
         </article>
 
-        <article class="panel px-2.5 md:px-5">
-          <div class="md:flex md:h-full md:gap-35">
+        <article class="panel md:flex md:justify-center md:items-center px-2.5 md:px-5">
+          <div class="md:flex  md:gap-35 md:relative md:max-h-220 md:h-full">
             <div
               class="mt-18 flex items-end gap-2.5 md:relative md:mt-0 md:w-123"
             >
@@ -100,13 +100,13 @@ const { history } = defineProps<{ history: History }>();
           </div>
         </article>
 
-        <article class="panel px-2.5 pb-30 md:px-5 md:pb-0">
-          <div class="md:flex md:gap-35">
-            <div class="mt-18 flex items-end gap-2.5 md:mt-21">
-              <div class="flex-1">
+        <article class="panel md:flex md:justify-center md:items-center px-2.5 pb-30 md:px-5 md:pb-0">
+          <div class="md:flex md:gap-35 md:relative md:max-h-220 md:h-full">
+            <div class="mt-18 md:mt-0 flex items-end gap-2.5">
+              <div class="flex-1  md:self-center">
                 <Image
                   :image="history.section_four.image_one"
-                  class="rounded-xs md:w-123 md:self-center"
+                  class="rounded-xs md:w-123"
                 />
               </div>
               <div class="flex-1 md:hidden">
@@ -116,10 +116,10 @@ const { history } = defineProps<{ history: History }>();
                 />
               </div>
             </div>
-            <div class="mt-10 md:mt-31 md:w-99">
+            <div class="mt-10 md:mt-24 md:w-99">
               <RichText
                 :content="history.section_four.title"
-                class="font-bodoni text-5xl font-medium uppercase"
+                class="mt-18  font-bodoni text-5xl font-medium uppercase"
               />
               <RichText
                 :content="history.section_four.content"
