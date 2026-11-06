@@ -10,7 +10,7 @@ const { footer, social_networks } = layout.value;
       <img
         :src="footer.logo.url"
         :alt="footer.logo.alt"
-        class="mx-auto w-77 pt-18 pb-16 md:pt-40"
+        class="mx-auto w-55 pt-18 pb-16 md:w-77 md:pt-40"
       >
     </NuxtLink>
 

@@ -31,7 +31,7 @@ defineProps<{ access: Access }>();
       <div class="text-center md:text-left">
         <RichText :content="access.content" />
 
-        <div class="mt-4 flex gap-2.5">
+        <div class="mt-4 flex justify-center gap-2.5 md:justify-start">
           <NuxtLink
             v-for="button of access.buttons"
             :key="button.image.url"
