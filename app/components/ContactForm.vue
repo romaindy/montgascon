@@ -88,7 +88,25 @@ async function submit() {
             v-model="form.event"
             label="Votre type d'évènement"
             required
-            :options="[{ label: 'test', value: 'test' }]"
+            :options="[
+              { label: 'Soirée d’entreprise', value: 'Soirée d’entreprise' },
+              { label: 'Séminaire', value: 'Séminaire' },
+              { label: 'Conférence', value: 'Conférence' },
+              { label: 'Réunion d’affaire', value: 'Réunion d’affaire' },
+              { label: 'Petit-déjeuner', value: 'Petit-déjeuner' },
+              { label: 'Déjeuner / cocktail', value: 'Déjeuner / cocktail' },
+              { label: 'Dîner / cocktail', value: 'Dîner / cocktail' },
+              { label: 'Showroom', value: 'Showroom' },
+              { label: 'Tournage', value: 'Tournage' },
+              { label: 'Press Event', value: 'Press Event' },
+              { label: 'Lancement de produit', value: 'Lancement de produit' },
+              { label: 'Mariage', value: 'Mariage' },
+              { label: 'Anniversaire', value: 'Anniversaire' },
+              {
+                label: 'Autre (merci de préciser dans détails)',
+                value: 'Autre (merci de préciser dans détails)',
+              },
+            ]"
           />
           <FormInput
             v-model="form.guests"
@@ -113,8 +131,20 @@ async function submit() {
             v-model="form.referal"
             label="Comment avez-vous connu Montgascon ?"
             required
-            :options="[{ label: 'test', value: 'test' }]"
+            :options="[
+              {
+                label: 'Participation à un événement à l’Hôtel de Montgascon',
+                value: 'Participation à un événement à l’Hôtel de Montgascon',
+              },
+              { label: 'Internet', value: 'Internet' },
+              { label: 'Instagram', value: 'Instagram' },
+              { label: 'Linkedin', value: 'Linkedin' },
+              { label: 'Bouche à oreille', value: 'Bouche à oreille' },
+              { label: 'Prestataires', value: 'Prestataires' },
+              { label: 'Autre', value: 'Autre' },
+            ]"
           />
+
           <FormTextarea
             v-model="form.description"
             label="Partagez-nous les détails de votre évènement"
