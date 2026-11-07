@@ -5,7 +5,7 @@ const { header } = layout.value;
 
 const headerHeight = useState("headerHeight");
 
-const headerEl = useTemplateRef("header");
+const headerEl = useTemplateRef("headerRef");
 
 const { currentScroll, scrolledDown } = useScroll();
 
@@ -29,7 +29,7 @@ onBeforeUnmount(() => {
 
 <template>
   <header
-    ref="header"
+    ref="headerRef"
     class="fixed top-0 left-0 z-20 w-full bg-white px-2.5 py-3 transition duration-300 md:px-5"
     :class="{
       '-translate-y-[100%]': scrolledDown && currentScroll > 116,
